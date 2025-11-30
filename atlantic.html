@@ -56,6 +56,97 @@
 			transform: scale(1.1);
 		}
 		.iya{
+			center: 40px;
+		}
+		span{
+			position: absolute;
+			bottom: 20%;
+			font-family: 'Rubik Gemstones', cursive;
+			width: 100%;
+			background-color: transparent ;
+			padding: 0 20px;
+			font-size: 1.3em;
+			text-align: center;
+		}
+		button, .content{
+			box-shadow: 0 0 4px rgba(0,0,0, .4);
+		}
+		h3{
+			position: absolute;
+			bottom: 10px;
+			letter-spacing: 2px;
+			font-size: 8px;
+			font-family: arial;
+		}
+		marquee{
+		   font-size: 20px;
+		   width: 100%;
+		   align-items: center;
+		   display: flex;
+		   color: black;
+		   box-shadow: 0 0 20px 0 black;
+		   height: 30px;
+		   background-color: #b8b8b8;
+	    }
+	</style>
+</head>
+<body>
+     <marquee behavior="" direction="right"
+     ><b>SELAMAT DATANG 💕</b></marquee>
+</body>
+<body>
+	<div class="cover" id="cover">
+		<div class="content">
+			<img src="nanyak.gif" alt="">
+			<span>Kamu mau enggak jadi love aku ?</span>
+			<button class="tombol iya" onclick="proses(this)" value="iya">Love you to</button>
+			<button class="tombol tidak" onclick="proses(this)" value="tidak" id="tidak">Enggak</button>
+			</div>
+	<h3>Dibuat oleh riel</h3>
+	</div>
+	<script>
+		const img = document.querySelector("img")
+		const span = document.querySelector("span")
+		const btn = document.querySelector("#tidak")
+		
+	 let klakKlik = 0
+	 
+		let proses = (a)=>{
+			if(a.value == "iya"){
+				img.src = "girang.gif"
+				btn.style.bottom = "-80px"
+				btn.style.right = "20px"
+				span.innerText = "uu tayang muach 😍😘"
+				if(btn.style.opacity == "0"){
+					btn.style.opacity = "1"
+					klakKlik = 5
+				}
+		}
+	</script>
+</body>
+</html>
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 0;
+		}
+		button{
+			position: absolute;
+			bottom: -80px;
+			height: 45px;
+			width: 100px;
+			background-color: rgba(255,255,255, .3);
+			border: none;
+			border-radius: 3px;
+			transition: .3s;
+			letter-spacing: 1px;
+			cursor: pointer ;
+			font-family: 'Anton', sans-serif;
+		}
+		button:hover {
+			transform: scale(1.1);
+		}
+		.iya{
 			left: 20px;
 		}
 		.tidak{
